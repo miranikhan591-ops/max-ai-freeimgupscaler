@@ -1,0 +1,24 @@
+{
+  "name": "max-ai-upscaler",
+  "version": "1.0.0",
+  "description": "Max AI - Image Upscaler & Super Resolution Engine",
+  "type": "module",
+  "scripts": {
+    "dev": "npx http-server . -p 3000 -c-1",
+    "build": "echo \"No build required for static site\"",
+    "start": "npx http-server . -p 8080",
+    "preview": "npm start"
+  },
+  "keywords": [
+    "ai",
+    "image",
+    "upscaler",
+    "super-resolution",
+    "enhancement"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}
