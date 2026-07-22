@@ -1,19 +1,17 @@
 {
   "version": 2,
   "name": "max-ai-upscaler",
-  "buildCommand": "npm run build",
-  "devCommand": "npm run dev",
-  "env": {},
-  "rewrites": [
-    {
-      "source": "/(.*)",
-      "destination": "/index.html"
-    }
-  ],
+  "cleanUrls": true,
+  "trailingSlash": false,
   "routes": [
     {
+      "src": "^/(?!.*\\.).*$",
+      "dest": "/index.html",
+      "status": 200
+    },
+    {
       "src": "/(.*)",
-      "dest": "/index.html"
+      "dest": "/$1"
     }
   ],
   "headers": [
